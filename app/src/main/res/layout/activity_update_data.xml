@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/update"
+    tools:context=".UpdateData">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="60dp"-->
+<!--            android:text="@string/update"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.497"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="270dp"
+            android:background="@drawable/input"
+            android:hint="@string/name"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/input"
+            android:hint="@string/address"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/input"
+            android:hint="@string/number"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/input"
+            android:hint="@string/age"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/number" />
+
+
+            <TextView
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:hint="Consultant Date"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/age"
+
+            />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup">
+            <RadioButton
+                android:id="@+id/date1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Sat 3 pm - 5 pm "
+                android:checked="false"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+            <RadioButton
+                android:id="@+id/date2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Sun 3 pm - 5 pm "
+                android:textStyle="bold"
+                android:checked="false"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/date3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Wed 4 pm - 6 pm "
+                android:textStyle="bold"
+                android:checked="false"
+                android:textSize="15dp" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            app:cornerRadius="15dp"
+            android:backgroundTint="@color/btncolor"
+            android:text="Update"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
